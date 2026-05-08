@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JustinApparel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+   
+    <header>
+      <h1>JustinApparel</h1>
+      <p class="tagline">Fresh fits for every day</p>
+    </header>
+
+    
+    <main>
+
+      
+      <section id="products-section">
+        <h2>Our Products</h2>
+
+        <div id="product-list">
+
+          
+          <article class="product-card">
+            <div class="product-emoji"></div>
+            <h3 class="product-name">Classic T-Shirt</h3>
+            <p class="product-desc">Soft cotton, everyday comfort.</p>
+            <p class="product-price">₱299</p>
+            <button class="add-btn" onclick="addToCart('Classic T-Shirt', 299)">
+              Add to Cart
+            </button>
+          </article>
+
+          
+          <article class="product-card">
+            <div class="product-emoji"></div>
+            <h3 class="product-name">Casual Shorts</h3>
+            <p class="product-desc">Lightweight and easy to wear.</p>
+            <p class="product-price">₱349</p>
+            <button class="add-btn" onclick="addToCart('Casual Shorts', 349)">
+              Add to Cart
+            </button>
+          </article>
+
+          
+          <article class="product-card">
+            <div class="product-emoji"></div>
+            <h3 class="product-name">Sneaker Shoes</h3>
+            <p class="product-desc">Stylish kicks for all occasions.</p>
+            <p class="product-price">₱899</p>
+            <button class="add-btn" onclick="addToCart('Sneaker Shoes', 899)">
+              Add to Cart
+            </button>
+          </article>
+
+        </div>
+      </section>
+
+      
+      <section id="cart-section">
+        <h2>🛒 Your Cart</h2>
+
+        
+        <p id="empty-msg">Your cart is empty. Add some items!</p>
+
+        
+        <ul id="cart-list"></ul>
+
+        
+        <div id="cart-total">
+          <strong>Total: <span id="total-price">₱0</span></strong>
+        </div>
+
+       
+        <div id="cart-buttons">
+          <button id="clear-btn" onclick="clearCart()">Clear Cart</button>
+          <button id="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+
+      </section>
+
+    </main>
+
+    
+    <footer>
+      <p>&copy; 2026 JustinApparel. All rights reserved.</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+
+  </body>
+</html>
